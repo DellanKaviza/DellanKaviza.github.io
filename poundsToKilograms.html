@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="CSS/template.css">
+    <meta charset="UTF-8">
+    <title>Pounds to KGs Converssion</title>
+	<script>
+		function conversion(){
+			//input
+			pounds_input = document.getElementById('pounds').value;
+			
+
+
+			//processing
+			pounds_value = parseFloat(pounds_input);
+			
+			kgs = pounds_value/2.2046;
+			
+			kgs_rounded = kgs.toFixed(1);
+
+			//output
+			document.getElementById('result').innerHTML = kgs_rounded + " Kilograms";
+
+
+
+		}
+
+
+
+
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+	<h1>Pounds to KGs Conversion</h1>
+	
+</header>
+<main>
+	<h3>Converting Pounds to KGs</h3>
+	<label>Enter Pounds Value: <input type="text" id="pounds"></label>
+	
+	<label><button onclick="conversion()">Convert to KGs</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+	<div id="result"></div>
+</main>
+<footer>
+	&copy;2021 &bull; Dellan Kaviza &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html> 
