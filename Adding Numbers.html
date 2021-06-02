@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="CSS/template.css">
+    <meta charset="UTF-8">
+    <title>Template</title>
+</head>
+<html>
+<body>
+
+<header>
+	<h1>Week 3: Add Two Numbers</h1>
+	<h2>Dellan Kaviza</h2>
+</header>
+<main>
+	<h3>Add Two Numbers</h3>
+	<label>Enter Number One: <input type="text" id="number1"></label>
+  <label>Enter Number Two: <input type="text" id="number2"></label>
+	<label><button onclick="addNumbers()">Add Numbers</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+	<div id="result"></div>
+</main>
+<footer>
+	<script>
+		function addNumbers(){
+			// input takes 2 values to be added
+			let fname1 = document.getElementById('number1').value;
+			let fname2 = document.getElementById('number2').value;
+
+			//processing adds the two values 
+			fnum1 = parseFloat(fname1);
+			fnum2 = parseFloat(fname2);
+			let result = fnum1 + fnum2;
+
+			//output display the result
+			document.getElementById('output').innerHTML = result;
+
+
+
+
+		}
+	</script>
+	&copy;2021 &bull; Dellan Kaviza &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html> 
