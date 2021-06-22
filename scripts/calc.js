@@ -5,8 +5,8 @@ function calc(){
             let sign_of_operator = document.getElementById('sign').value;
             let answered_value = document.getElementById('ans').value;
             //let check_value = 0;
-            let txt_correct = "correct";
-            let txt_incorrect = "incorrect";
+            let txt_correct = "Correct! 🏆";
+            let txt_incorrect = "Incorrect 😢";
 
             //processing and output
             a = parseFloat(digit_1);
@@ -17,35 +17,43 @@ function calc(){
 
             switch(sign_of_operator){
                 case "+":
-                    check_value = a + b;
+                    check_value_add = a + b;
                     if (check_value == c) {
                         document.getElementById('result').innerHTML = txt_correct;
+                        break;
                     }else {
                         document.getElementById('result').innerHTML = txt_incorrect;
+                        break;
                     }
                 
                 case "-":                    
-                    check_value = a - b;
-                    if (check_value == c) {
+                    check_value_minus = a - b;
+                    if (check_value_minus == c) {
                         document.getElementById('result').innerHTML = txt_correct;
+                        break;
                     }else {
                         document.getElementById('result').innerHTML = txt_incorrect;
+                        break;
                     }                   
 
                 case "*":                    
-                    check_value = a * b;
-                    if (check_value == c) {
+                    check_value_product = a * b;
+                    if (check_value_product == c) {
                         document.getElementById('result').innerHTML = txt_correct;
+                        break;
                     }else {
                         document.getElementById('result').innerHTML = txt_incorrect;
+                        break;
                     }
 
                 case "/":                    
-                    check_value = a / b;
-                    if (check_value == c) {
+                    check_value_devide = a / b;
+                    if (check_value_devide == c) {
                         document.getElementById('result').innerHTML = txt_correct;
+                        break;
                     }else {
                         document.getElementById('result').innerHTML = txt_incorrect;
+                        break;
                     }
 
  
