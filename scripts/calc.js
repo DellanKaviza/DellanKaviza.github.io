@@ -18,7 +18,7 @@ function calc(){
             switch(sign_of_operator){
                 case "+":
                     check_value_add = a + b;
-                    if (check_value == c) {
+                    if (check_value_add == c) {
                         document.getElementById('result').innerHTML = txt_correct;
                         break;
                     }else {
