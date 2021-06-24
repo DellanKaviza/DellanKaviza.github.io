@@ -38,6 +38,8 @@ document.getElementById('display2').textContent = output2;
 
 document.getElementById('display4').textContent = balance;   
 
+    //loop 5 no need for ; before the {}
+
 
 
 
