@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="CSS/template.css">
+		<meta charset="UTF-8">
+		<title>Question 1</title>
+		<script>
+			function pay(){
+				//input
+				reg_input = document.getElementById('hours_worked').value;
+				ot_input = document.getElementById('overtime_hours').value;
+	
+	
+				//processing
+				reg = parseFloat(reg_input)
+				ot = parseFloat(ot_input)
+				gross = (reg *15) + (ot*22.5);
+				tax = 0.15 * gross;
+				pay1 = gross - tax;
+				pay2 = parseFloat(pay1)
+				pay_after_tax = pay2.toFixed(2);
+	
+				//output
+				document.getElementById('result').innerHTML = "$"+pay_after_tax;
+	
+	
+	
+			}
+	
+	
+	
+	
+		</script>
+	</head>
+<body>
+
+<header>
+	<h1>Employee's Pay</h1>
+	
+</header>
+<main>
+	<h3>Calculate Pay After Tax</h3>
+	<label>Enter Total Regular Hours Worked: <input type="text" id="hours_worked"></label>
+	<label>Enter Total Over Time Hours Worked: <input type="text" id="overtime_hours"></label>
+	<label><button onclick="pay()">Calculate Pay</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+	<div id="result"></div>
+</main>
+<footer>
+	&copy;2021 &bull; Dellan Kaviza &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html> 
