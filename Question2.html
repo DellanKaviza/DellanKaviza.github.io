@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="CSS/template.css">
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+	<script>
+		function volume(){
+			//input
+			radius = document.getElementById('radius_value').value;
+			height = document.getElementById('height_value').value;
+
+
+			//processing
+			r = parseFloat(radius);
+			h = parseFloat(height);
+			
+			vol = (22/7) * (r * r) * h;
+			v = vol.toFixed(0);
+
+			//output
+			document.getElementById('result').innerHTML = v;
+
+
+
+		}
+
+
+
+
+	</script>
+</head>
+<html>
+<body>
+
+<header>
+	<h1>Volume</h1>
+	
+</header>
+<main>
+	<h3>Calculate Volume</h3>
+	<label>Enter radius: <input type="text" id="radius_value"></label>
+	<label>Enter height: <input type="text" id="height_value"></label>
+	<label><button onclick="volume()">Calculate Volume</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+	<div id="result"></div>
+</main>
+<footer>
+	&copy;2021 &bull; Dellan Kaviza &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html> 
