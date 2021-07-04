@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="CSS/template.css">
+		<meta charset="UTF-8">
+		<title>Investment Calculator</title>
+		<script src="scripts/investment.js"></script>
+	</head>
+<body>
+
+<header>
+	<h1>Investment Calculator</h1>
+	
+	
+</header>
+<main>
+	<h3>Investment Calculator</h3>
+	<label>Amount Invested(principal): <input type="text" id="amntInvested"></label>
+	<label>Annual rate (example: .08): <input type="text" id="annualRate"></label>
+	<label>Number of years: <input type="text" id="number_of_years"></label>
+	<label>Periods per year: <input type="text" id="periods_per_year"></label>
+	<label><button onclick="doFV()">Compute Future value</button></label>
+	<label><button onclick="pay()">Reset</button></label>
+	<hr>
+	<p><span id="output"></span></p>
+	<div id="result"></div>
+</main>
+<footer>
+	&copy;2021 &bull; Dellan Kaviza &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html> 
