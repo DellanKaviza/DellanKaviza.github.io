@@ -31,3 +31,14 @@ function computeFutureValue(principal, annualRate, years, periodsPerYear) {
     
 
 }
+
+function resetFields() {
+    document.getElementById('amntInvested').value = "";
+    document.getElementById('annualRate').value = "";
+    document.getElementById('number_of_years').value = "";
+    document.getElementById('periods_per_year').value = "";
+
+
+
+
+}
