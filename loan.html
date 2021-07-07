@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="CSS/template.css">
+		<meta charset="UTF-8">
+		<title>Loan Calculator</title>
+		<script src="scripts/loan.js"></script>
+	</head>
+<body>
+
+<header>
+	<h1>Loan Calculator</h1>
+	
+</header>
+<main>
+	<h3></h3>
+	<label>Amount borrowed (principal): <input type="text" id="amount_borrowed"></label>
+	<label>Annual interest rate (example: 065): <input type="text" id="interest_rates"></label>
+	<label>Number of years: <input type="text" id="number_of_years"></label>
+	<label>Payments per years: <input type="text" id="payments_per_year"></label>
+	<label><button onclick="doPayment()">Compute payment</button><div id="result1"></div></label>
+	<label>Number of payments paid to date <input type="text" id="number_of_payments"></label>
+	<label><button onclick="doBalance()">Compute pay off amount</button><div id="result2"></div></button></label>
+	<hr>
+	<p><span id="output"></span></p>
+	<div id=""></div>
+</main>
+<footer>
+	&copy;2021 &bull; Dellan Kaviza &bull; BYU-Idaho &bull; CIT 160
+</footer>
+</body>
+</html> 
